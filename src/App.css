@@ -1,0 +1,223 @@
+:root {
+  --default-bg: #fcfbff;
+  --primary-color: #d7c6f3;
+  --primary-text: #231833;
+  --secondary-color: #1d1d1d;
+  --secondary-text: #fbf9ff;
+  --secondary-color-opacity: #13111857;
+  --tertiary-color: #c1c1ff;
+  --btn-color: #9a71e0;
+  --btn-border: #28193b;
+  --btn-active: #34244c;
+  --calculator-background: #fff;
+  --calculator-btn-bg: #9376be;
+  --calculator-input-border: #cfcfcfde;
+  --cta-btn: #ffc966;
+  --cta-btn-dark: #f1b33e;
+  --date-container-color: #d7bcff;
+}
+
+.home-calc {
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  width: 40vw;
+}
+
+.calculator-c {
+  font-family: Roboto, sans-serif;
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+div {
+  display: block;
+}
+
+.calculator {
+  align-items: center;
+  background-color: var(--calculator-background);
+  border-radius: 15px;
+  box-shadow: 0 0 30px 0 #00000020;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 40px 20px;
+  /* z-index: 19; */
+}
+
+#top-tier {
+  margin: 20px 0;
+}
+
+.tier {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-tier {
+  background-color: var(--calculator-btn-bg);
+  border-radius: 12px;
+  color: var(--secondary-text);
+  cursor: pointer;
+  font-size: 17px;
+  padding: 12px 16px;
+  position: relative;
+}
+
+.highlight {
+  border-radius: 12px;
+  color: var(--btn-active) !important;
+  font-size: 17px;
+}
+
+.pw-ip-c p {
+  color: var(--primary-text) !important;
+  font-size: 16px;
+  text-align: start;
+}
+
+.calen-c p {
+  color: var(--primary-text) !important;
+  font-size: 16px;
+  text-align: start;
+}
+
+.quantity-c {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 17px;
+  width: 100%;
+}
+
+.quantity {
+  width: 50%;
+}
+
+.pw {
+  display: flex;
+  gap: 12px;
+}
+
+.pw div {
+  background-color: var(--calculator-btn-bg);
+  border-radius: 12px;
+  color: var(--secondary-text);
+  font-size: 17px;
+  padding: 10px 20px;
+  position: relative;
+  width: 100%;
+
+}
+
+
+.paper-select {
+  margin: 5% 0;
+  width: 100%;
+}
+
+.paper-select p {
+  font-size: 18px;
+  margin: 5px 0;
+  text-align: start;
+}
+
+.pw div {
+  background-color: var(--calculator-btn-bg);
+  border-radius: 12px;
+  color: var(--secondary-text);
+  font-size: 17px;
+  padding: 10px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.quantity input {
+  border: 1px solid var(--calculator-input-border);
+  border-radius: 10px;
+  color: var(--primary-text);
+  font-size: 20px;
+  margin: 3px 0 8px;
+  padding: 7px;
+  text-align: center;
+}
+
+.btn,
+input {
+  border: none;
+  outline: none;
+}
+
+.react-datepicker__input-container input {
+  border: 1px solid var(--calculator-input-border);
+  border-radius: 10px;
+  color: var(--primary-text);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 9px 10px;
+}
+
+.react-datepicker__day-names, .react-datepicker__header, .react-datepicker__month-container {
+  background-color: var(--date-container-color)!important;
+  color: var(--secondary-color)!important;
+}
+
+.price-c {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.price-main {
+  color: var(--secondary-color-opacity);
+  font-size: 12px;
+}
+
+.price {
+  font-size: 20px;
+  padding-top: 6px;
+  text-align: center;
+  color: var(--primary-text);
+}
+
+button {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--secondary-color);
+  outline: none;
+}
+
+.calen-c p {
+  color: var(--primary-text) !important;
+  font-size: 16px;
+  text-align: start;
+}
+
+
+
+.order-btn button {
+  background-color: var(--cta-btn);
+  border-radius: 15px;
+  color: var(--primary-text);
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 18px 20px;
+  transition: all .3s;
+  width: 100%;
+}
+
+.order-btn button:hover {
+  box-shadow: 0 0 10px 0 #00000030;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
